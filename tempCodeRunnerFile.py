@@ -1,6 +1,10 @@
-keys = ["minggu", "bulan", "tahun"]
-values = ["7 hari", "4 minggu", "12 bulan"]
+a = int(input("masukkan angka:"))
 
-data_dict = dict(zip(keys, values))
-print("Data Dictionary:")
-print(data_dict)
+x = bin(a)[2:].zfill(8)
+y = oct(a)[2:].zfill(8)
+z = hex(a)[2:].zfill(8)
+
+print("bilangan desimal: ",a)
+print("bilangan biner: ",x)
+print("bilangan octal: ",y)
+print("bilangan hexa desimal: ",z) 
